@@ -11,7 +11,7 @@ Kubernetes Deployment On Bare-metal Ubuntu Nodes
 
 ## Introduction
 
-This document describes how to deploy kubernetes on ubuntu nodes, including 1 master node and 3 minion nodes, and people uses this approach can scale to **any number of minion nodes** by changing some settings with ease. The original idea was heavily inspired by @jainvipin 's ubuntu single node work, which has been merge into this document.
+This document describes how to deploy kubernetes on ubuntu nodes, including 1 master node and 3 minion nodes, and people using this approach can scale to **any number of minion nodes** by changing some settings with ease. The original idea was heavily inspired by @jainvipin's ubuntu single node work, which has been merge into this document.
 
 [Cloud team from Zhejiang University](https://github.com/ZJU-SEL) will maintain this work.
 
@@ -86,7 +86,7 @@ After all the above variable being set correctly. We can use below command in cl
 
 `$ KUBERNETES_PROVIDER=ubuntu ./kube-up.sh` 
 
-The scripts is automatically scp binaries and config files to all the machines and start the k8s service on them. The only thing you need to do is to type the sudo password when promoted. The current machine name is shown below like. So you will not type in the wrong password.
+The scripts is automatically scp binaries and config files to all the machines and start the k8s service on them. The only thing you need to do is to type the sudo password when prompted. The current machine name is shown below like. So you will not type in the wrong password.
 
 ```
 
